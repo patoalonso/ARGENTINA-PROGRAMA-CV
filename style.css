@@ -1,0 +1,289 @@
+*{
+box-sizing: border-box; 
+font-family: 'Work Sans', sans-serif;
+color: whitesmoke;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+header{
+background-color: #212529;
+width: 200px;
+height: 100%;  
+position: fixed;
+overflow: auto;
+top: 0;
+left:0;
+overflow-x: hidden;
+z-index: 999;
+border-right: 1px solid;
+}
+
+.contenedor-imagen{
+display: flex;
+flex-direction: column;
+}
+
+.imagen{
+width: 30%;
+}
+
+nav a{
+text-decoration: none;
+}
+
+nav a:hover{
+color: rgb(255, 196, 0);
+text-decoration: underline;
+}
+
+.items li:hover{
+font-size: 15px;
+}
+
+.items{
+list-style: none;
+padding-left: 2px;
+margin-top: 10px;
+}
+
+.items li{
+padding: 13px 0;
+text-align: left;
+margin: 0 30px;
+border-bottom: 1px solid;
+font-size: 14px;
+font-weight: 300;
+text-transform: uppercase;
+}
+
+.nav-footer{
+position: absolute;
+bottom: 15px;;
+left: 0;
+width: 100%;
+display: inline-block;
+margin-left: 10px;
+}
+
+.iconos-social li{
+list-style: none;
+display: inline-block;
+font-size: 18px;
+margin-right: 20px;
+}
+
+/* Esta caja es fija. Contiene a "home", "sobre mi", "habilidades", "experiencia", "estudios"  */
+
+.caja-con-info{
+position: absolute;
+top: 0;
+left: 200px;
+right: 0;
+width: auto;
+height: 100%;
+perspective: 1200px;
+overflow: hidden;
+}
+
+/*----------sección HOME---------- */
+
+/*#home{
+display: none;
+}*/
+
+.contenido-home{
+padding-top: 150px;
+position: absolute;
+width: 100%;
+text-align: center;
+display: block;
+min-height: 100%;
+background-image: url(imagenes/hot-air-balloon-736879_1280.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.contenido-home h1{
+font-size: 25px;
+font-weight: 700;
+letter-spacing: 1.5px;
+font-family: 'Roboto Mono', monospace;
+background: linear-gradient(grey, rgb(185, 177, 177), lightgrey);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.contenido-sobre-mi, .contenido-habilidades, .contenido-resumen{
+width: 100%;
+margin: auto;
+position: absolute;
+text-align: center;
+min-height: 100%;
+padding-left: 50px;
+padding-right: 50px;
+background-color: #212529;
+}
+
+/*-------Para todo los títulos------*/
+
+.titulo{
+margin-bottom: 35px;
+margin-top: 50px;
+border-bottom:rgb(174, 165, 165) solid 1px;
+padding-bottom: 10px;
+}
+    
+.titulo h3{
+text-align: left;
+color: lightgrey;
+font-size: 30px;
+}
+
+/*---------sección SOBRE Mí---------- */
+
+.bi-person-fill{
+    text-align: right;
+}
+
+#sobre-mi{
+display: none;
+}
+
+.contenedor-datos{
+display: flex;
+flex-flow: row nowrap;
+}
+
+.texto-sobre-mi{
+width: 65%;
+text-align: left;
+color: antiquewhite;
+font-size: 20px;
+line-height: 2;
+}
+
+.lateral-datos-personales{
+text-align: left;
+color: antiquewhite;
+font-size: 18px;
+line-height: 1.65;
+
+}
+
+.lateral-datos-personales h2{
+margin: 0px;
+padding-left: 40px;
+margin-bottom: 10px;
+}
+
+
+.datos ul{
+text-align: left;
+}
+
+.datos{
+list-style: none;
+}
+
+.datos li{
+margin-bottom: 15px;
+}
+
+
+
+/*----------sección HABILIDADES----------*/
+
+#habilidades{
+display: none;
+}
+
+label {
+padding-right: 10px;
+font-size: 1rem;
+}
+
+.contenedor-habilidades-todas{
+display: flex;
+flex-flow: row nowrap;
+margin-left: 25px;
+}
+
+.habilidades-duras, .habilidades-blandas{
+width: 65%;
+text-align: left;
+color: antiquewhite;
+line-height: 2;
+margin-left: 20px;
+display: inline-grid; 
+}
+
+progress[value] {
+/* Elimino la apariencia por defecto */
+-webkit-appearance: none;
+appearance: none;
+         
+/* Quito el borde que aparece en Firefox */
+border: none;
+     
+/* Añado mis propios estilos */
+width: 400px;
+height: 8px;
+overflow:hidden;
+border-radius: 20px;
+}
+    
+.habilidades-duras progress::-webkit-progress-value{
+background: linear-gradient(to right,purple, blue);
+border-radius : 20px;  
+}
+
+.habilidades-blandas progress::-webkit-progress-value{
+background: linear-gradient(to right, purple, red, orange, yellow);
+border-radius : 20px;  
+}
+
+
+
+/*----------sección RESUMEN---------- */
+
+#resumen{
+display: none;
+}
+
+.contenedor-resumen{
+display: flex;
+flex-flow: row nowrap;
+margin-left: 25px;
+
+}
+
+.tareas{
+width: 65%;
+text-align: left;
+color: antiquewhite;
+line-height: 2;
+margin-left: 20px;
+}
+
+.estudios{
+width: 65%;
+text-align: left;
+color: antiquewhite;
+margin-left: 20px;
+}
+    
+h4, h2{
+text-align: left;
+color: antiquewhite;
+line-height: 2;
+font-size: 18px;
+}
+
+
+
+
+
